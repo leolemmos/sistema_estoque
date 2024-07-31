@@ -1,0 +1,61 @@
+CREATE DATABASE produto_db;
+
+USE produto_db ;
+
+
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    produto VARCHAR(255) NOT NULL,
+    fabricante VARCHAR(255) NOT NULL,
+    valor DECIMAL(10,2) NOT NULL,
+    quantidade INT NOT NULL,
+    descricao TEXT
+);
+
+
+INSERT INTO produtos (produto, fabricante, valor, quantidade, descricao) 
+VALUES
+('Laptop Gaming XYZ', 'TechBrand', 4999.99, 10, 'Laptop para jogos com placa gráfica dedicada e 16GB de RAM.'),
+('Smartphone Alpha', 'SmartCo', 2499.99, 25, 'Smartphone com tela AMOLED e câmera de 48MP.'),
+('Tablet Pro 10', 'TabTech', 1799.99, 15, 'Tablet com tela de 10 polegadas e suporte a caneta.'),
+('Smartwatch Z', 'WatchMe', 999.99, 30, 'Smartwatch com monitoramento de saúde e GPS.'),
+('Headphones Ultra', 'SoundMaster', 799.99, 40, 'Headphones com cancelamento de ruído ativo e Bluetooth.'),
+('Teclado Mecânico RGB', 'KeyBoardPro', 599.99, 20, 'Teclado mecânico com retroiluminação RGB e switches Cherry MX.'),
+('Mouse Gamer X', 'GamingGear', 399.99, 35, 'Mouse gamer com 16000 DPI e iluminação RGB.'),
+('Monitor 4K Ultra', 'VisionTech', 1499.99, 12, 'Monitor 4K de 27 polegadas com taxa de atualização de 144Hz.'),
+('Câmera DSLR 3000', 'PhotoKing', 3499.99, 8, 'Câmera DSLR com lente de 18-55mm e gravação em 4K.'),
+('Drone Elite', 'FlyHigh', 2899.99, 10, 'Drone com câmera 4K e alcance de 5 km.'),
+('Roteador Wi-Fi 6', 'NetSpeed', 899.99, 25, 'Roteador Wi-Fi 6 com cobertura de até 500 m².'),
+('Console Game X', 'GameBox', 3499.99, 20, 'Console de jogos com 1TB de armazenamento e compatível com 4K.'),
+('Impressora Multifuncional', 'PrintIt', 1299.99, 18, 'Impressora multifuncional com suporte a impressão em alta qualidade.'),
+('Fone de Ouvido Bluetooth', 'AudioX', 499.99, 45, 'Fone de ouvido Bluetooth com autonomia de 20 horas.'),
+('Cadeira Ergonômica', 'ComfortSeat', 1799.99, 22, 'Cadeira ergonômica com apoio para lombar e ajuste de altura.'),
+('Base para Notebook', 'CoolDesk', 299.99, 28, 'Base para notebook com ventilação e ajuste de ângulo.'),
+('Webcam Full HD', 'VisionCam', 399.99, 33, 'Webcam com resolução Full HD e microfone embutido.'),
+('Caixa de Som Bluetooth', 'SoundWave', 799.99, 30, 'Caixa de som Bluetooth  30 horas de autonomia.'),
+('Adaptador USB-C', 'ConnectPro', 199.99, 50, 'Adaptador USB-C para HDMI e USB 3.0.'),
+('Leitor de Cartão SD', 'CardReader', 149.99, 55, 'Leitor de cartão SD e microSD com USB 3.0.');
+
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+    
+);
+
+
+INSERT INTO usuarios (username, password) 
+VALUES
+('leo', '123'),
+('adm', '123'),
+('cuca', '123');
+
+
+
+
+
+
+
+
+
